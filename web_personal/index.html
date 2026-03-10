@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>胡优 — AIGC 影像叙事者</title>
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/works.css">
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav class="nav" id="nav">
+    <span class="nav-logo">胡优</span>
+    <ul class="nav-links">
+      <li><a href="#about">关于</a></li>
+      <li><a href="#works">作品</a></li>
+      <li><a href="#skills">工具</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <!-- 有视频时取消注释，替换 src -->
+    <!--
+    <div class="hero-media">
+      <video autoplay muted loop playsinline>
+        <source src="assets/videos/hero-reel.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">AIGC 影像 · 智能媒介叙事</p>
+      <h1 class="hero-title">胡优</h1>
+      <p class="hero-subtitle">用 AI 重新定义影像叙事的边界</p>
+      <a href="#works" class="hero-cta">查看作品</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>向下探索</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section class="about" id="about">
+    <p class="about-statement" data-animate="fade-up">
+      用 <span class="highlight">AI 影像</span> 讲述<br>
+      只有这个时代才能讲述的故事
+    </p>
+    <p class="about-body" data-animate="fade-up">
+      北京邮电大学 × 中国传媒大学，专注 AIGC 影像创作与智能媒介叙事研究。
+      用 ComfyUI、Stable Diffusion、虚拟制作等工具探索 AI 与影像的边界。
+    </p>
+    <div class="about-meta" data-stagger>
+      <div class="about-meta-item">
+        <span class="value">北邮 × 中传</span>
+        <span class="label">双校背景</span>
+      </div>
+      <div class="about-meta-item">
+        <span class="value">智能媒介叙事</span>
+        <span class="label">研究方向</span>
+      </div>
+      <div class="about-meta-item">
+        <span class="value">2027</span>
+        <span class="label">预计毕业</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Works ── -->
+  <section class="works" id="works">
+    <div class="works-header" data-animate="fade-up">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">作品</h2>
+    </div>
+
+    <div class="works-tabs" id="worksTabs">
+      <button class="tab-btn active" data-tab="all">全部</button>
+      <button class="tab-btn" data-tab="film">AI 短片</button>
+      <button class="tab-btn" data-tab="comfyui">ComfyUI</button>
+      <button class="tab-btn" data-tab="design">AI 设计</button>
+      <button class="tab-btn" data-tab="virtual">虚拟制作</button>
+      <button class="tab-btn" data-tab="media">自媒体</button>
+    </div>
+
+    <div class="works-grid" id="worksGrid">
+      <!-- 素材放置：在每个 .work-card 内加 <img src="assets/images/封面文件名.jpg" alt="作品名"> -->
+      <div class="work-card card-large" data-category="film">
+        <!-- <img src="assets/images/work-film-01.jpg" alt="AI 短片"> -->
+        <div class="card-info">
+          <p class="card-category">AI 短片</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+      <div class="work-card card-medium" data-category="comfyui">
+        <!-- <img src="assets/images/work-comfyui-01.jpg" alt="ComfyUI"> -->
+        <div class="card-info">
+          <p class="card-category">ComfyUI</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+      <div class="work-card card-small" data-category="design">
+        <!-- <img src="assets/images/work-design-01.jpg" alt="AI 设计"> -->
+        <div class="card-info">
+          <p class="card-category">AI 设计</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+      <div class="work-card card-small" data-category="virtual">
+        <!-- <img src="assets/images/work-virtual-01.jpg" alt="虚拟制作"> -->
+        <div class="card-info">
+          <p class="card-category">虚拟制作</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+      <div class="work-card card-medium" data-category="media">
+        <!-- <img src="assets/images/work-media-01.jpg" alt="自媒体"> -->
+        <div class="card-info">
+          <p class="card-category">自媒体</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+      <div class="work-card card-large" data-category="design">
+        <!-- <img src="assets/images/work-design-02.jpg" alt="AI 设计"> -->
+        <div class="card-info">
+          <p class="card-category">AI 设计</p>
+          <p class="card-title">作品标题</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section class="skills" id="skills">
+    <div class="skills-header" data-animate="fade-up">
+      <span class="section-label">Toolstack</span>
+      <h2 class="section-title">工具与技能</h2>
+    </div>
+    <div class="skills-grid" data-stagger>
+      <div class="skill-item"><p class="skill-name">ComfyUI</p><p class="skill-type">AI 生图</p></div>
+      <div class="skill-item"><p class="skill-name">Stable Diffusion</p><p class="skill-type">AI 生图</p></div>
+      <div class="skill-item"><p class="skill-name">Runway</p><p class="skill-type">AI 视频</p></div>
+      <div class="skill-item"><p class="skill-name">Kling</p><p class="skill-type">AI 视频</p></div>
+      <div class="skill-item"><p class="skill-name">虚拟制作</p><p class="skill-type">影视技术</p></div>
+      <div class="skill-item"><p class="skill-name">Premiere Pro</p><p class="skill-type">剪辑</p></div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="contact" id="contact">
+    <h2 class="contact-slogan" data-animate="fade-up">
+      让我们一起<br>创造下一帧
+    </h2>
+    <div class="contact-links" data-stagger>
+      <div class="contact-item">
+        <span class="contact-label">邮箱</span>
+        <p class="contact-value"><a href="mailto:your@email.com">your@email.com</a></p>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">手机</span>
+        <p class="contact-value">+86 xxx xxxx xxxx</p>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">小红书</span>
+        <p class="contact-value">@胡优</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 胡优 · AIGC 影像叙事者</p>
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
