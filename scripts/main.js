@@ -20,6 +20,14 @@ tabs.forEach(btn => {
   });
 });
 
+// 悬停播放 / 离开暂停
+document.querySelectorAll('.work-card').forEach(card => {
+  const video = card.querySelector('video');
+  if (!video) return;
+  card.addEventListener('mouseenter', () => video.play());
+  card.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+});
+
 // 滚动入场动画
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
