@@ -4,14 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>胡优 — AIGC 影像叙事者</title>
-  <link rel="stylesheet" href="styles/tokens.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/nav.css">
-  <link rel="stylesheet" href="styles/hero.css">
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/works.css">
-  <link rel="stylesheet" href="styles/skills.css">
-  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
@@ -94,49 +87,117 @@
     </div>
 
     <div class="works-grid" id="worksGrid">
-      <!-- 素材放置：在每个 .work-card 内加 <img src="assets/images/封面文件名.jpg" alt="作品名"> -->
-      <div class="work-card card-large" data-category="film">
-        <!-- <img src="assets/images/work-film-01.jpg" alt="AI 短片"> -->
+      <div class="work-card" data-category="film">
+        <!-- <img src="assets/images/work-film-01.jpg" alt="油画扁平风 AI 短片"> -->
         <div class="card-info">
           <p class="card-category">AI 短片</p>
-          <p class="card-title">作品标题</p>
+          <p class="card-title">油画扁平风 · 爱德华·霍普 × 超现实</p>
+          <p class="card-desc">B站 20w+ 播放 · 12fps 定格动画质感</p>
         </div>
       </div>
-      <div class="work-card card-medium" data-category="comfyui">
-        <!-- <img src="assets/images/work-comfyui-01.jpg" alt="ComfyUI"> -->
+      <div class="work-card" data-category="film">
+        <!-- <img src="assets/images/work-film-02.jpg" alt="古风工笔淡彩 AI 短片"> -->
+        <div class="card-info">
+          <p class="card-category">AI 短片</p>
+          <p class="card-title">中国古风工笔淡彩</p>
+          <p class="card-desc">水墨写意 + 工笔重彩 · 小红书</p>
+        </div>
+      </div>
+      <div class="work-card" data-category="film">
+        <!-- <img src="assets/images/work-film-03.jpg" alt="逍遥游 东方奇幻"> -->
+        <div class="card-info">
+          <p class="card-category">AI 短片</p>
+          <p class="card-title">逍遥游 · 东方奇幻</p>
+          <p class="card-desc">细腻工笔水彩 · 空灵东方美学</p>
+        </div>
+      </div>
+      <div class="work-card" data-category="film">
+        <!-- <img src="assets/images/work-film-04.jpg" alt="稚拙手绘治愈插画"> -->
+        <div class="card-info">
+          <p class="card-category">AI 短片 · Demo</p>
+          <p class="card-title">稚拙手绘 · 治愈插画</p>
+          <p class="card-desc">温暖复古田园 · 手绘逐帧质感</p>
+        </div>
+      </div>
+      <div class="work-card" data-category="comfyui">
+        <img src="assets/images/comfyui.png" alt="ComfyUI 作品">
         <div class="card-info">
           <p class="card-category">ComfyUI</p>
-          <p class="card-title">作品标题</p>
+          <p class="card-title">风格转绘设计</p>
+          <p class="card-desc">线稿结构控制 · IP-Adapter 风格迁移</p>
         </div>
       </div>
-      <div class="work-card card-small" data-category="design">
-        <!-- <img src="assets/images/work-design-01.jpg" alt="AI 设计"> -->
+
+
+      <div class="work-card" data-category="design">
+        <img src="assets/images/design-max.png" alt="怪奇物语 MAX 海报">
         <div class="card-info">
           <p class="card-category">AI 设计</p>
-          <p class="card-title">作品标题</p>
+          <p class="card-title">怪奇物语 MAX · 海报设计</p>
+          <p class="card-desc">日系复古风格 · 丝网印刷质感</p>
         </div>
       </div>
-      <div class="work-card card-small" data-category="virtual">
-        <!-- <img src="assets/images/work-virtual-01.jpg" alt="虚拟制作"> -->
+
+      <div class="work-card" data-category="design">
+        <img src="assets/images/design-font.png" alt="字体设计">
+        <div class="card-info">
+          <p class="card-category">AI 设计</p>
+          <p class="card-title">灵喵墨韵 · 字体设计</p>
+          <p class="card-desc">水墨书法风格 · 中文字体创作</p>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="design">
+        <img src="assets/images/design-nyota.png" alt="Nyota IP 海报">
+        <div class="card-info">
+          <p class="card-category">AI 设计</p>
+          <p class="card-title">Nyota · IP 海报设计</p>
+          <p class="card-desc">原创 IP 视觉 · 四季插画风格</p>
+        </div>
+      </div>
+
+
+
+      <div class="work-card" data-category="virtual">
+        <img src="assets/images/virtual.png" alt="虚拟制作实践">
         <div class="card-info">
           <p class="card-category">虚拟制作</p>
-          <p class="card-title">作品标题</p>
+          <p class="card-title">C4D · Blender · Unity</p>
+          <p class="card-desc">动态 GIF · 粒子光效 · 赛车游戏开发</p>
         </div>
       </div>
-      <div class="work-card card-medium" data-category="media">
-        <!-- <img src="assets/images/work-media-01.jpg" alt="自媒体"> -->
-        <div class="card-info">
-          <p class="card-category">自媒体</p>
-          <p class="card-title">作品标题</p>
+
+
+        <div class="work-card" data-category="media">
+          <img src="assets/images/internet.png" alt="互联网领域实践">
+          <div class="card-info">
+            <p class="card-category">互联网实践</p>
+            <p class="card-title">小程序开发 · 创新大赛</p>
+            <p class="card-desc">挑战杯三等奖 · 中国国际大学生创新大赛金奖</p>
+          </div>
         </div>
-      </div>
-      <div class="work-card card-large" data-category="design">
-        <!-- <img src="assets/images/work-design-02.jpg" alt="AI 设计"> -->
-        <div class="card-info">
-          <p class="card-category">AI 设计</p>
-          <p class="card-title">作品标题</p>
+
+        <div class="work-card" data-category="media">
+          <img src="assets/images/xiaohongshu.png" alt="自媒体运营">
+          <div class="card-info">
+            <p class="card-category">自媒体运营</p>
+            <p class="card-title">轻舟竟川 · 小红书影评</p>
+            <p class="card-desc">2000+ 粉丝 · 1.7 万点赞与收藏</p>
+          </div>
         </div>
-      </div>
+
+        <div class="work-card" data-category="media">
+          <img src="assets/images/screenplay.png" alt="剧作实践">
+          <div class="card-info">
+            <p class="card-category">剧作实践</p>
+            <p class="card-title">剧本分析 · 原创剧作</p>
+            <p class="card-desc">结构分析 · IP 改编 · 原创都市情感剧本</p>
+          </div>
+        </div>
+
+
+
+
     </div>
   </section>
 
