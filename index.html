@@ -10,12 +10,23 @@
 
   <!-- ── Nav ── -->
   <nav class="nav" id="nav">
-    <span class="nav-logo">胡优</span>
+    <span class="nav-logo" data-i18n="nav.logo">胡优</span>
     <ul class="nav-links">
-      <li><a href="#about">关于</a></li>
-      <li><a href="#works">作品</a></li>
-      <li><a href="#skills">工具</a></li>
-      <li><a href="#contact">联系</a></li>
+      <li><a href="#about"   data-i18n="nav.about">关于</a></li>
+      <li><a href="#works"   data-i18n="nav.works">作品</a></li>
+      <li><a href="#skills"  data-i18n="nav.skills">工具</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
+      <li>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18"/>
+            <path d="M12 3a14 14 0 010 18"/>
+            <path d="M12 3a14 14 0 000 18"/>
+          </svg>
+          <span class="lang-text">EN</span>
+        </button>
+      </li>
     </ul>
   </nav>
 
@@ -33,13 +44,13 @@
     </div>
     -->
     <div class="hero-content">
-      <p class="hero-eyebrow">AIGC 影像 · 智能媒介叙事</p>
-      <h1 class="hero-title">胡优</h1>
-      <p class="hero-subtitle">用 AI 重新定义影像叙事的边界</p>
-      <a href="#works" class="hero-cta">查看作品</a>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">AIGC 影像 · 智能媒介叙事</p>
+      <h1 class="hero-title" data-i18n="hero.title">胡优</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">用 AI 重新定义影像叙事的边界</p>
+      <a href="#works" class="hero-cta" data-i18n="hero.cta">查看作品</a>
     </div>
     <div class="hero-scroll-hint">
-      <span>向下探索</span>
+      <span data-i18n="hero.scroll">向下探索</span>
       <div class="scroll-arrow"></div>
     </div>
   </section>
@@ -47,25 +58,25 @@
   <!-- ── About ── -->
   <section class="about" id="about">
     <p class="about-statement" data-animate="fade-up">
-      用 <span class="highlight">AI 影像</span> 讲述<br>
-      只有这个时代才能讲述的故事
+      <span data-i18n="about.statement1">用 </span><span class="highlight" data-i18n="about.highlight">AI 影像</span><span data-i18n="about.statement2"> 讲述</span><br>
+      <span data-i18n="about.statement3">只有这个时代才能讲述的故事</span>
     </p>
-    <p class="about-body" data-animate="fade-up">
+    <p class="about-body" data-animate="fade-up" data-i18n="about.body">
       北京邮电大学 × 中国传媒大学，专注 AIGC 影像创作与智能媒介叙事研究。
       用 ComfyUI、Stable Diffusion、虚拟制作等工具探索 AI 与影像的边界。
     </p>
     <div class="about-meta" data-stagger>
       <div class="about-meta-item">
-        <span class="value">北邮 × 中传</span>
-        <span class="label">双校背景</span>
+        <span class="value" data-i18n="about.meta1.v">北邮 × 中传</span>
+        <span class="label" data-i18n="about.meta1.l">双校背景</span>
       </div>
       <div class="about-meta-item">
-        <span class="value">智能媒介叙事</span>
-        <span class="label">研究方向</span>
+        <span class="value" data-i18n="about.meta2.v">智能媒介叙事</span>
+        <span class="label" data-i18n="about.meta2.l">研究方向</span>
       </div>
       <div class="about-meta-item">
-        <span class="value">2027</span>
-        <span class="label">预计毕业</span>
+        <span class="value" data-i18n="about.meta3.v">2027</span>
+        <span class="label" data-i18n="about.meta3.l">预计毕业</span>
       </div>
     </div>
   </section>
@@ -73,151 +84,143 @@
   <!-- ── Works ── -->
   <section class="works" id="works">
     <div class="works-header" data-animate="fade-up">
-      <span class="section-label">Portfolio</span>
-      <h2 class="section-title">作品</h2>
+      <span class="section-label" data-i18n="works.label">Portfolio</span>
+      <h2 class="section-title" data-i18n="works.title">作品</h2>
     </div>
 
     <div class="works-tabs" id="worksTabs">
-      <button class="tab-btn active" data-tab="all">全部</button>
-      <button class="tab-btn" data-tab="film">AI 短片</button>
-      <button class="tab-btn" data-tab="comfyui">ComfyUI</button>
-      <button class="tab-btn" data-tab="design">AI 设计</button>
-      <button class="tab-btn" data-tab="virtual">虚拟制作</button>
-      <button class="tab-btn" data-tab="media">自媒体</button>
+      <button class="tab-btn active" data-tab="all"     data-i18n="works.tab.all">全部</button>
+      <button class="tab-btn"        data-tab="film"    data-i18n="works.tab.film">AI 短片</button>
+      <button class="tab-btn"        data-tab="comfyui" data-i18n="works.tab.comfyui">ComfyUI</button>
+      <button class="tab-btn"        data-tab="design"  data-i18n="works.tab.design">AI 设计</button>
+      <button class="tab-btn"        data-tab="virtual" data-i18n="works.tab.virtual">虚拟制作</button>
+      <button class="tab-btn"        data-tab="media"   data-i18n="works.tab.media">自媒体</button>
     </div>
 
     <div class="works-grid" id="worksGrid">
+
       <div class="work-card" data-category="film">
         <div class="card-media">
           <video src="assets/videos/work-film-01.mp4" muted loop playsinline
                  poster="assets/images/work-film-01-cover.jpg"></video>
         </div>
         <div class="card-info">
-          <p class="card-category">AI 短片</p>
-          <p class="card-title">中国古风工笔淡彩</p>
-          <p class="card-desc">水墨写意 + 工笔重彩 · 小红书</p>
+          <p class="card-category" data-i18n="cat.film">AI 短片</p>
+          <p class="card-title" data-i18n="card.film1.title">中国古风工笔淡彩</p>
+          <p class="card-desc"  data-i18n="card.film1.desc">水墨写意 + 工笔重彩 · 小红书</p>
         </div>
       </div>
+
       <div class="work-card" data-category="film">
         <div class="card-media">
           <video src="assets/videos/work-film-02.mp4" muted loop playsinline
                  poster="assets/images/work-film-02-cover.jpeg"></video>
         </div>
         <div class="card-info">
-          <p class="card-category">AI 短片</p>
-          <p class="card-title">织光之途 · 细腻工笔水彩</p>
-          <p class="card-desc">空灵东方美学 · 工笔水彩质感</p>
+          <p class="card-category" data-i18n="cat.film">AI 短片</p>
+          <p class="card-title" data-i18n="card.film2.title">织光之途 · 细腻工笔水彩</p>
+          <p class="card-desc"  data-i18n="card.film2.desc">空灵东方美学 · 工笔水彩质感</p>
         </div>
       </div>
+
       <div class="work-card" data-category="film">
         <div class="card-media">
           <video src="assets/videos/work-film-03.mp4" muted loop playsinline
                  poster="assets/images/work-film-03-cover.jpg"></video>
         </div>
         <div class="card-info">
-          <p class="card-category">AI 短片 · Demo</p>
-          <p class="card-title">稚拙手绘 · 治愈插画</p>
-          <p class="card-desc">温暖复古田园 · 手绘逐帧质感</p>
+          <p class="card-category" data-i18n="cat.film.demo">AI 短片 · Demo</p>
+          <p class="card-title" data-i18n="card.film3.title">稚拙手绘 · 治愈插画</p>
+          <p class="card-desc"  data-i18n="card.film3.desc">温暖复古田园 · 手绘逐帧质感</p>
         </div>
       </div>
 
+      <div class="work-card" data-category="film">
+        <div class="card-media">
+          <video
+            src="https://res.cloudinary.com/dbpq5hx5b/video/upload/v1774197815/%E4%B8%89%E4%BD%93_compressed_ay1nqg.mp4"
+            muted loop playsinline
+            poster="assets/images/santi.png">
+          </video>
+        </div>
+        <div class="card-info">
+          <p class="card-category" data-i18n="cat.experimental">实验短片</p>
+          <p class="card-title" data-i18n="card.film4.title">金鱼缸</p>
+          <p class="card-desc"  data-i18n="card.film4.desc">实验影像 · AI 叙事探索</p>
+        </div>
+      </div>
 
-<div class="work-card" data-category="film">
-  <div class="card-media">
-    <video 
-      src="https://res.cloudinary.com/dbpq5hx5b/video/upload/v1774197815/%E4%B8%89%E4%BD%93_compressed_ay1nqg.mp4" 
-      muted 
-      loop 
-      playsinline
-      poster="assets/images/santi.png"
-    ></video>
-  </div>
-  <div class="card-info">
-    <p class="card-category">实验短片</p>
-    <p class="card-title">金鱼缸</p>
-    <p class="card-desc">实验影像 · AI 叙事探索</p>
-  </div>
-</div>
-
-      
       <div class="work-card" data-category="comfyui">
         <img src="assets/images/comfyui.png" alt="ComfyUI 作品">
         <div class="card-info">
-          <p class="card-category">ComfyUI</p>
-          <p class="card-title">风格转绘设计</p>
-          <p class="card-desc">线稿结构控制 · IP-Adapter 风格迁移</p>
+          <p class="card-category" data-i18n="cat.comfyui">ComfyUI</p>
+          <p class="card-title" data-i18n="card.comfy1.title">风格转绘设计</p>
+          <p class="card-desc"  data-i18n="card.comfy1.desc">线稿结构控制 · IP-Adapter 风格迁移</p>
         </div>
       </div>
-
 
       <div class="work-card" data-category="design">
         <img src="assets/images/design-max.png" alt="怪奇物语 MAX 海报">
         <div class="card-info">
-          <p class="card-category">AI 设计</p>
-          <p class="card-title">怪奇物语 MAX · 海报设计</p>
-          <p class="card-desc">日系复古风格 · 丝网印刷质感</p>
+          <p class="card-category" data-i18n="cat.design">AI 设计</p>
+          <p class="card-title" data-i18n="card.design1.title">怪奇物语 MAX · 海报设计</p>
+          <p class="card-desc"  data-i18n="card.design1.desc">日系复古风格 · 丝网印刷质感</p>
         </div>
       </div>
 
       <div class="work-card" data-category="design">
         <img src="assets/images/design-font.png" alt="字体设计">
         <div class="card-info">
-          <p class="card-category">AI 设计</p>
-          <p class="card-title">灵喵墨韵 · 字体设计</p>
-          <p class="card-desc">水墨书法风格 · 中文字体创作</p>
+          <p class="card-category" data-i18n="cat.design">AI 设计</p>
+          <p class="card-title" data-i18n="card.design2.title">灵喵墨韵 · 字体设计</p>
+          <p class="card-desc"  data-i18n="card.design2.desc">水墨书法风格 · 中文字体创作</p>
         </div>
       </div>
 
       <div class="work-card" data-category="design">
         <img src="assets/images/design-nyota.png" alt="Nyota IP 海报">
         <div class="card-info">
-          <p class="card-category">AI 设计</p>
-          <p class="card-title">Nyota · IP 海报设计</p>
-          <p class="card-desc">原创 IP 视觉 · 四季插画风格</p>
+          <p class="card-category" data-i18n="cat.design">AI 设计</p>
+          <p class="card-title" data-i18n="card.design3.title">Nyota · IP 海报设计</p>
+          <p class="card-desc"  data-i18n="card.design3.desc">原创 IP 视觉 · 四季插画风格</p>
         </div>
       </div>
-
-
 
       <div class="work-card" data-category="virtual">
         <img src="assets/images/virtual.png" alt="虚拟制作实践">
         <div class="card-info">
-          <p class="card-category">虚拟制作</p>
-          <p class="card-title">C4D · Blender · Unity</p>
-          <p class="card-desc">动态 GIF · 粒子光效 · 赛车游戏开发</p>
+          <p class="card-category" data-i18n="cat.virtual">虚拟制作</p>
+          <p class="card-title" data-i18n="card.virtual1.title">C4D · Blender · Unity</p>
+          <p class="card-desc"  data-i18n="card.virtual1.desc">动态 GIF · 粒子光效 · 赛车游戏开发</p>
         </div>
       </div>
 
-
-        <div class="work-card" data-category="media">
-          <img src="assets/images/internet.png" alt="互联网领域实践">
-          <div class="card-info">
-            <p class="card-category">互联网实践</p>
-            <p class="card-title">小程序开发 · 创新大赛</p>
-            <p class="card-desc">挑战杯三等奖 · 中国国际大学生创新大赛金奖</p>
-          </div>
+      <div class="work-card" data-category="media">
+        <img src="assets/images/internet.png" alt="互联网领域实践">
+        <div class="card-info">
+          <p class="card-category" data-i18n="cat.internet">互联网实践</p>
+          <p class="card-title" data-i18n="card.media1.title">小程序开发 · 创新大赛</p>
+          <p class="card-desc"  data-i18n="card.media1.desc">挑战杯三等奖 · 中国国际大学生创新大赛金奖</p>
         </div>
+      </div>
 
-        <div class="work-card" data-category="media">
-          <img src="assets/images/xiaohongshu.png" alt="自媒体运营">
-          <div class="card-info">
-            <p class="card-category">自媒体运营</p>
-            <p class="card-title">轻舟竟川 · 小红书影评</p>
-            <p class="card-desc">2000+ 粉丝 · 1.7 万点赞与收藏</p>
-          </div>
+      <div class="work-card" data-category="media">
+        <img src="assets/images/xiaohongshu.png" alt="自媒体运营">
+        <div class="card-info">
+          <p class="card-category" data-i18n="cat.media">自媒体运营</p>
+          <p class="card-title" data-i18n="card.media2.title">轻舟竟川 · 小红书影评</p>
+          <p class="card-desc"  data-i18n="card.media2.desc">2000+ 粉丝 · 1.7 万点赞与收藏</p>
         </div>
+      </div>
 
-        <div class="work-card" data-category="media">
-          <img src="assets/images/screenplay.png" alt="剧作实践">
-          <div class="card-info">
-            <p class="card-category">剧作实践</p>
-            <p class="card-title">剧本分析 · 原创剧作</p>
-            <p class="card-desc">结构分析 · IP 改编 · 原创都市情感剧本</p>
-          </div>
+      <div class="work-card" data-category="media">
+        <img src="assets/images/screenplay.png" alt="剧作实践">
+        <div class="card-info">
+          <p class="card-category" data-i18n="cat.screenplay">剧作实践</p>
+          <p class="card-title" data-i18n="card.media3.title">剧本分析 · 原创剧作</p>
+          <p class="card-desc"  data-i18n="card.media3.desc">结构分析 · IP 改编 · 原创都市情感剧本</p>
         </div>
-
-
-
+      </div>
 
     </div>
   </section>
@@ -225,39 +228,58 @@
   <!-- ── Skills ── -->
   <section class="skills" id="skills">
     <div class="skills-header" data-animate="fade-up">
-      <span class="section-label">Toolstack</span>
-      <h2 class="section-title">工具与技能</h2>
+      <span class="section-label" data-i18n="skills.label">Toolstack</span>
+      <h2 class="section-title" data-i18n="skills.title">工具与技能</h2>
     </div>
     <div class="skills-grid" data-stagger>
-      <div class="skill-item"><p class="skill-name">ComfyUI</p><p class="skill-type">AI 生图</p></div>
-      <div class="skill-item"><p class="skill-name">Stable Diffusion</p><p class="skill-type">AI 生图</p></div>
-      <div class="skill-item"><p class="skill-name">Runway</p><p class="skill-type">AI 视频</p></div>
-      <div class="skill-item"><p class="skill-name">Kling</p><p class="skill-type">AI 视频</p></div>
-      <div class="skill-item"><p class="skill-name">虚拟制作</p><p class="skill-type">影视技术</p></div>
-      <div class="skill-item"><p class="skill-name">Premiere Pro</p><p class="skill-type">剪辑</p></div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.comfy.n">ComfyUI</p>
+        <p class="skill-type" data-i18n="skill.comfy.t">AI 生图</p>
+      </div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.sd.n">Stable Diffusion</p>
+        <p class="skill-type" data-i18n="skill.sd.t">AI 生图</p>
+      </div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.runway.n">Runway</p>
+        <p class="skill-type" data-i18n="skill.runway.t">AI 视频</p>
+      </div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.kling.n">Kling</p>
+        <p class="skill-type" data-i18n="skill.kling.t">AI 视频</p>
+      </div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.virtual.n">虚拟制作</p>
+        <p class="skill-type" data-i18n="skill.virtual.t">影视技术</p>
+      </div>
+      <div class="skill-item">
+        <p class="skill-name" data-i18n="skill.pr.n">Premiere Pro</p>
+        <p class="skill-type" data-i18n="skill.pr.t">剪辑</p>
+      </div>
     </div>
   </section>
 
   <!-- ── Contact ── -->
   <section class="contact" id="contact">
     <h2 class="contact-slogan" data-animate="fade-up">
-      让我们一起<br>创造下一帧
+      <span data-i18n="contact.slogan1">让我们一起</span><br>
+      <span data-i18n="contact.slogan2">创造下一帧</span>
     </h2>
     <div class="contact-links" data-stagger>
       <div class="contact-item">
-        <span class="contact-label">邮箱</span>
-        <p class="contact-value"><a href="mailto:your@email.com">your@email.com</a></p>
+        <span class="contact-label" data-i18n="contact.email">邮箱</span>
+        <p class="contact-value"><a href="mailto:your@email.com">huyou@mails.cuc.edu.cn</a></p>
       </div>
       <div class="contact-item">
-        <span class="contact-label">手机</span>
-        <p class="contact-value">+86 xxx xxxx xxxx</p>
+        <span class="contact-label" data-i18n="contact.phone">手机</span>
+        <p class="contact-value">+86 198 9247 0825</p>
       </div>
       <div class="contact-item">
-        <span class="contact-label">小红书</span>
+        <span class="contact-label" data-i18n="contact.xhs">小红书</span>
         <p class="contact-value">@胡优</p>
       </div>
     </div>
-    <p class="footer-note">© 2026 胡优 · AIGC 影像叙事者</p>
+    <p class="footer-note" data-i18n="contact.footer">© 2026 胡优 · AIGC 影像叙事者</p>
   </section>
 
   <script src="scripts/main.js"></script>
